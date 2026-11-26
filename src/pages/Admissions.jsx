@@ -90,13 +90,13 @@ export default function Admissions() {
             </li>
             <li className="flex items-start gap-3">
               <FaClock className="text-secondary mt-1 shrink-0" />
-              <span>Sun–Fri, 9:30 AM – 4:00 PM</span>
+              <span>Mon–Fri, 9:30 AM – 4:00 PM</span>
             </li>
           </ul>
 
           <h3 className="font-heading font-semibold text-lg mt-8 mb-3">Important Dates</h3>
           <ul className="text-sm space-y-2 text-white/90">
-            <li>• New session (2082 B.S.) — Baishakh 1</li>
+            <li>• New session (2084 B.S.) — Baishakh 1</li>
             <li>• Application deadline — Baishakh 15</li>
             <li>• Entrance exam — Baishakh 20</li>
           </ul>
@@ -124,7 +124,7 @@ export default function Admissions() {
                 name="name"
                 value={form.name}
                 onChange={handleChange}
-                placeholder="John Doe"
+                placeholder="Ram Bahadur"
                 className={`w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 transition ${
                   errors.name ? "border-red-400 focus:ring-red-200" : "border-gray-200 focus:ring-primary/40"
                 }`}
@@ -141,7 +141,7 @@ export default function Admissions() {
                   type="email"
                   value={form.email}
                   onChange={handleChange}
-                  placeholder="john@example.com"
+                  placeholder="ram@example.com"
                   className={`w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 transition ${
                     errors.email ? "border-red-400 focus:ring-red-200" : "border-gray-200 focus:ring-primary/40"
                   }`}

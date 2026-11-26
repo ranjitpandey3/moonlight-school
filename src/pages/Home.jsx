@@ -50,7 +50,7 @@ export default function Home() {
 
         <div className="relative max-w-7xl mx-auto px-6 py-28 md:py-40 text-center">
           <p className="text-secondary font-bold tracking-widest uppercase mb-3 text-sm md:text-base">
-            Admissions Open for 2082 B.S.
+            Admissions Open for 2084 B.S.
           </p>
           <h1 className="text-4xl md:text-6xl font-heading font-extrabold leading-tight">
             Empowering Minds, <br className="hidden md:block" />

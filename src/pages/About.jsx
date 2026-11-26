@@ -23,8 +23,7 @@ const values = [
 const milestones = [
   { year: "2049 B.S.", text: "MoonLight Secondary English School founded in Lalmatiya, Dang." },
   { year: "2052 B.S.", text: "Expanded with a new branch: River Rapti English School in Bhalubang." },
-  { year: "2075 B.S.", text: "Celebrated our first batch of 100% SEE pass graduates with distinction." },
-  { year: "2082 B.S.", text: "Serving 1,200+ students across two campuses with modern facilities." },
+  { year: "2083 B.S.", text: "Serving 1,200+ students across two campuses with modern facilities." },
 ];
 
 const stats = [
