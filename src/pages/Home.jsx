@@ -178,22 +178,22 @@ export default function Home() {
               Stay Connected With Us
             </h2>
             <p className="text-gray-600 mb-8">
-              Watch our latest school events, morning assemblies, and student activities on YouTube. 
+              Watch our latest school events, morning assemblies, and student activities on YouTube.
               Parents can also download our official mobile app to stay updated with notices and results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a 
-                href="https://www.youtube.com/@MoonlightSchool-Official" 
-                target="_blank" 
+              <a
+                href="https://www.youtube.com/@MoonlightSchool-Official"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 bg-[#FF0000] text-white px-6 py-3 rounded-full font-semibold hover:bg-red-700 transition"
               >
                 <FaYoutube size={20} />
                 Subscribe on YouTube
               </a>
-              <a 
-                href="https://play.google.com/store/apps/details?id=com.eacademynepal.moonlight&pcampaignid=web_share" 
-                target="_blank" 
+              <a
+                href="https://play.google.com/store/apps/details?id=com.eacademynepal.moonlight&pcampaignid=web_share"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition"
               >
@@ -202,10 +202,16 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="w-full md:w-1/3 bg-gray-200 h-64 md:h-auto self-stretch flex items-center justify-center p-6">
-            <div className="text-center">
-              <FaYoutube className="text-6xl text-[#FF0000] mx-auto mb-2 opacity-50" />
-              <p className="text-sm text-gray-500 font-medium">Moonlight School Official</p>
+          <div className="w-full md:w-1/2 p-6">
+            <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-lg">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/8Ay-B_6Q5R4"
+                title="Moonlight School Official Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
         </div>
@@ -215,7 +221,7 @@ export default function Home() {
       <section className="bg-primary text-white text-center py-16 px-6">
         <h2 className="text-3xl md:text-4xl font-heading font-bold">Ready to Join Our Family?</h2>
         <p className="mt-3 mb-8 max-w-xl mx-auto text-white/80">
-          We are now accepting applications for the upcoming academic session. 
+          We are now accepting applications for the upcoming academic session.
           Visit either of our campuses or apply online today.
         </p>
         <Link
