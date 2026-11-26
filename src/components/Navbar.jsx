@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../assets/logo/logo.jpg"; // Importing your logo
+import logo from "../assets/logo/logo.jpg";
 
 const links = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
   { to: "/academics", label: "Academics" },
-  { to: "/faculty", label: "Faculty" }, // <-- Add this
+  { to: "/faculty", label: "Faculty" },
   { to: "/activities", label: "Activities" },
   { to: "/gallery", label: "Gallery" },
   { to: "/admissions", label: "Admissions" },
@@ -21,22 +21,24 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
         
         {/* Logo & Name */}
-        <Link to="/" className="flex items-center gap-3">
-          <div className="bg-white p-1 rounded-lg border border-gray-200 shadow-sm">
-            <img src={logo} alt="MoonLight Logo" className="h-10 w-auto md:h-12" />
+        <Link to="/" className="flex items-center gap-2 sm:gap-3">
+          <div className="bg-white p-1 rounded-lg border border-gray-200 shadow-sm shrink-0">
+            <img src={logo} alt="MoonLight Logo" className="h-8 w-auto sm:h-10 md:h-12" />
           </div>
-          <div className="hidden lg:block">
-            <h1 className="font-heading font-bold text-lg text-primary leading-tight">
+          
+          {/* Changed from hidden lg:block to block so it shows on mobile */}
+          <div className="block">
+            <h1 className="font-heading font-bold text-xs sm:text-sm md:text-lg text-primary leading-tight">
               MoonLight Secondary
             </h1>
-            <p className="text-xs text-secondary font-semibold tracking-wider uppercase">
+            <p className="text-[9px] sm:text-[10px] md:text-xs text-secondary font-semibold tracking-wider uppercase">
               English School
             </p>
           </div>
         </Link>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex items-center gap-5 lg:gap-7 font-medium text-sm lg:text-base">
+        <ul className="hidden md:flex items-center gap-3 lg:gap-6 font-medium text-sm lg:text-base">
           {links.map((l) => (
             <li key={l.to}>
               <NavLink
@@ -53,7 +55,7 @@ export default function Navbar() {
           ))}
           <Link
             to="/admissions"
-            className="bg-primary text-white px-5 py-2 rounded-full hover:bg-primary/90 transition shadow-md text-sm lg:text-base"
+            className="bg-primary text-white px-4 py-1.5 lg:px-5 lg:py-2 rounded-full hover:bg-primary/90 transition shadow-md text-sm lg:text-base whitespace-nowrap"
           >
             Apply Now
           </Link>
@@ -61,7 +63,7 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-2xl text-primary"
+          className="md:hidden text-2xl text-primary shrink-0 p-1"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
